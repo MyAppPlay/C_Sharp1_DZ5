@@ -7,9 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Задание1", "Зада
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Задание2", "..\Второе задание\Задание2.csproj", "{64D5E2BD-D169-4E4A-90F9-8541FB4023A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Задание3", "..\Задание3\Задание3.csproj", "{93B3A3BD-89D5-4069-82E0-DFBC6534FA36}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Список заданий", "Список заданий", "{645D70DC-6E54-4FB4-8E5C-34B12ECC6266}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Задание3", "..\Задание3\Задание3.csproj", "{93B3A3BD-89D5-4069-82E0-DFBC6534FA36}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
