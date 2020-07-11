@@ -14,9 +14,6 @@ namespace Задание1
     {
         static void Main()
         {
-
-            Console.WriteLine("\t\tПрограмма проверки корректности ввода логина №1");
-
             RegexLogin();
 
             Console.Clear();
@@ -29,12 +26,23 @@ namespace Задание1
             string login;
             do
             {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("\n\t\tПрограмма проверки корректности ввода логина №1");
+                Console.ForegroundColor = ConsoleColor.White;
 
-                Console.WriteLine("Длина логина должа составлять 2 - 10 символов латинского алфавита и первым символом  не должно быть число");
+                Console.WriteLine("\t Длина логина должа составлять 2 - 10 символов латинского алфавита\n" +
+                    "\t первым символом  не должно быть число");
+
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("\tПожалуйста введите ЛОГИН");
+                Console.ForegroundColor = ConsoleColor.White;
+
                 login = Console.ReadLine();
+
                 Console.Clear();
+
                 LoginCorrectWithRegex(login);
+
                 Console.WriteLine("\tДля выхода из программы наберите 0 или продолжайте вводить логины");
             }
             while (login != "0");
@@ -45,16 +53,23 @@ namespace Задание1
         /// </summary>
         private static void LoginCorrectNoRegex()
         {
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("\t\tПрограмма проверки корректности ввода логина №2");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("\tПожалуйста введите ЛОГИН");
+            Console.ForegroundColor = ConsoleColor.White;
+
             string login;
             while (true)
             {
                 login = Console.ReadLine();
+                bool correct = true;
+                char[] loginChar = login.ToCharArray();
+
                 if (login == "0")
                     break;
-                char[] loginChar = login.ToCharArray();
-                bool correct = true;
+
                 if (login.Length > 1 && login.Length < 11 && !(loginChar[0] > '0' && loginChar[0] < '9'))
                 {
                     foreach (char ch in loginChar)
@@ -70,8 +85,8 @@ namespace Задание1
                             break;
                         }
                     }
-                    if(correct)
-                    Console.WriteLine($"Логин: {login} \n\t...OK...\n");
+                    if (correct)
+                        Console.WriteLine($"Логин: {login} \n\t...OK...\n");
                     Console.WriteLine("\tДля выхода из программы наберите 0 или продолжайте вводить логины");
                 }
                 else
