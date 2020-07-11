@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Задание2", "..\Вт�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Задание3", "..\Задание3\Задание3.csproj", "{93B3A3BD-89D5-4069-82E0-DFBC6534FA36}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Список заданий", "Список заданий", "{645D70DC-6E54-4FB4-8E5C-34B12ECC6266}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +32,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B48B3EE7-FA1E-47CB-8670-B7212750F94B} = {645D70DC-6E54-4FB4-8E5C-34B12ECC6266}
+		{64D5E2BD-D169-4E4A-90F9-8541FB4023A8} = {645D70DC-6E54-4FB4-8E5C-34B12ECC6266}
+		{93B3A3BD-89D5-4069-82E0-DFBC6534FA36} = {645D70DC-6E54-4FB4-8E5C-34B12ECC6266}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {11480EB8-F0A8-4896-8174-7BF233BFDA34}
